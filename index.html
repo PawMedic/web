@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PawMedic </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- <h1>PAWMEDIC</h1> -->
+        <img src="img/logo-pawMedic-putih.png" alt="logo">
+
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+        <a href="#home" id="berandaLink" onclick="tampilkanBeranda()">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Service</a>
+        <a href="#ingredients">Ingredients</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <!--Home-->
+    <section class="home" id="home">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="home_container">
+                    <div class="home_data">
+                        <h1 class="home_title">Doxycycline</h1>
+                        <h2 class="home_subtitle">Obat pill kucing ketika si bobby sakit</h2>
+                    </div>
+                    <img src="img/obatpaw1.png" alt="" class="home_img">
+                    <a href="#" class="button">Explore Now</a>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="home_container">
+                    <div class="home_data">
+                        <h1 class="home_title">Prednisone</h1>
+                        <h2 class="home_subtitle">Salah satu obat flu terkenal yang ampuh mengatasi flu berat</h2>
+
+                    </div>
+                    <img src="img/obatpaw2.png" alt="" class="home_img">
+                    <a href="#" class="button">Explore Now</a>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="home_container">
+                    <div class="home_data">
+                        <h1 class="home_title">Baytril</h1>
+                        <h2 class="home_subtitle">Obat ini untuk mengatasi kucing anda agar nafsu makan bertambah</h2>
+
+                    </div>
+                    <img src="img/obatpaw3.png" alt="" class="home_img">
+                    <a href="#" class="button">Explore Now</a>
+                </div>
+            </div>
+
+        </div>
+        <br>
+
+        <!-- Tombol Next dan Previous -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- Titik/Tanda bulatan -->
+        <div style="text-align: center">
+            <span class="dots" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+    <!-------------------------- About ---------------------------->
+    <section class="about section bd-container" id="about">
+        <div class="about_container bd-grid">
+            <div class="about_data">
+                <img src="img/about-pawmedic.png" alt="" class="about_img">
+                <!-- <span class="section-subtitle about_intial"> About us</span> -->
+                <h2 class="section-title about_intial">We create the best <br> Medication </h2>
+                <p class="about_description">Kami menghadirkan layanan yang menyeluruh untuk memastikan kesejahteraan
+                    dan kebahagiaan hewan kesayangan Anda. Tidak hanya itu, aplikasi ini juga menjadi satu-satunya
+                    tempat yang Anda butuhkan untuk segala kebutuhan obat hewan. <br>
+                    Dengan Aplikasi Layanan Kesehatan Hewan kami, Anda dapat dengan mudah mengakses informasi terkini
+                    tentang kesehatan hewan, memperoleh konsultasi langsung dengan dokter hewan profesional, dan bahkan
+                    memesan obat-obatan untuk hewan kesayangan Anda dengan cepat dan mudah.</p>
+                <a href="#" class="button">Explore History</a>
+            </div>
+        </div>
+    </section>
+    <!----------------------- Service -------------------------------->
+    <section class="services section bd-container" id="services">
+        <!-- <span class="section-subtitle">Offering</span> -->
+        <h2 class="section-title">Our amazing service</h2>
+        <div class="services_container bd-grid">
+            <div class="services_content">
+                <img src="img/janji-temu.png" alt="" class="services_img">
+                <h3 id="jadwalLink" class="janji_title">Jadwalkan Janji Temu</h3>
+                <p class="services_description">Segera jadwalkan janji temu dengan dokter hewan untuk berkonsultasi</p>
+            </div>
+            <div class="service_content">
+                <img src="img/store.png" alt="" class="services_img">
+                <h3 id="storeLink" class="store_title">Obat dan Vitamin</h3>
+                <p class="services_description">Dapatkan pembelian obat dan vitamin di sini</p>
+            </div>
+            <div class="service_content">
+                <img src="img/chat-doctor.png" alt="" class="services_img">
+                <h3 id="chatLink" class="chat_title">Chat Dokter</h3>
+                <p class="services_description">Konsultasi online dengan dokter siaga</p>
+            </div>
+        </div>
+    </section>
+
+    <!----------------- Ingredients ------------------>
+
+    <section class="ingredients bd-container" id="ingredients">
+        <div class="ingredients bd-grid">
+            <div class="ingredients_data">
+                <!-- <span class="section-subtitle ingredients_initial">Ingredients</span> -->
+                <h2 class="section-title ingredients_initial">Find Your Medication</h2>
+                <p class="ingredients_description">Silahkan untuk melihat bahan-bahan obat dari kami.<br>
+                    disini anda akan mengetahui kandungan dan bahan yang ada di dalam obat.</p>
+
+            </div>
+            <img src="img/bahan-obat-paw.png" alt="" class="size_img">
+        </div>
+    </section>
+
+    <!--contact us-->
+
+    <section class="contact bd-container" id="contact">
+        <div class="contact_container bd-grid">
+            <div class="contact_data">
+                <!-- <span class="section-subtitle contact_initial">Let's Talk</span> -->
+                <h2 class="section-title contact_initial">Contact Us</h2>
+                <p class="contact_description">Jika kamu ingin membeli obat di PawMedic, kami akan segera melayani kamu
+                    dengan layanan 24/7 </p>
+            </div>
+            <div class="contact_button">
+                <a href="#" class="button">Contact Us now</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!--footer-->
+    <footer>
+        <div class="footer_container">
+            <div class="footer_info">
+                <h3 class="footer_title">Contact Us</h3>
+                <p class="footer_description">Jl. Dr. Ir. H. Soekarno No.682, Gn. Anyar, Kec. Gn. Anyar, Surabaya, Jawa
+                    Timur 60294</p>
+                <p class="footer_description">Email: safriyamurni@gmail.com</p>
+                <p class="footer_description">Phone: 0838-4608-4124</p>
+            </div>
+            <div class="footer_links">
+                <h3 class="footer_title">Quick Links</h3>
+                <ul class="footer_nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer_social">
+                <h3 class="footer_title">Follow Us</h3>
+                <div class="social_icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer_copy">&#169; 2024 Safriya Murni Puspita. All right reserved</p>
+
+    </footer>
+    <!----------------- main js ------------------>
+    <script src="js/jquery.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+
+</html>
